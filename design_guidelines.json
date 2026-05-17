@@ -1,0 +1,87 @@
+{
+  "theme_and_archetype": {
+    "domain": "Productivity, SaaS",
+    "theme": "DARK",
+    "archetype": "Archetype 4: Swiss & High-Contrast (Tech SaaS Variant)",
+    "vibe": "Modern, minimal, premium, professional, similar to Linear, Stripe, or Notion."
+  },
+  "colors": {
+    "background": "#09090B",
+    "surface": "#121214",
+    "surface_elevated": "#18181B",
+    "border": "rgba(255, 255, 255, 0.08)",
+    "border_hover": "rgba(255, 255, 255, 0.15)",
+    "primary": "#FFFFFF",
+    "primary_foreground": "#000000",
+    "accent": "#2563EB",
+    "accent_subtle": "rgba(37, 99, 235, 0.15)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "text_muted": "#71717A",
+    "status": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    }
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Figtree",
+    "import_url": "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap",
+    "rules": [
+      "Use tracking-tight for headings.",
+      "Never center everything; left-align content for readability.",
+      "Headings should use font-medium or font-semibold, not black, to keep it clean.",
+      "Never use Inter for headings."
+    ]
+  },
+  "micro_themes": {
+    "header": "Glassmorphism: bg-zinc-950/70, backdrop-blur-xl, border-b border-white/10.",
+    "cards": "Solid background (#121214) with a sharp 1px border (border-white/10). No large shadows, only a subtle inner glow on hover.",
+    "pricing_cards": "Use 'Tracing Beam' or subtle radial gradients behind the pro-tier card."
+  },
+  "spacing_and_layout": {
+    "padding_scale": "Use generous padding for containers: p-6, p-8, p-12.",
+    "grids": "Use 'Bento' style grids for features. md:grid-cols-2 or md:grid-cols-3 with gap-6.",
+    "kanban_board": "Use a tight 'Control Room' grid: gap-4, columns have a solid background (bg-zinc-900/50), cards are drag-n-drop styled (cursor-grab, elevated)."
+  },
+  "components": {
+    "buttons": "Rounded edges (rounded-md or rounded-lg). Primary button is pure white with black text. Secondary button is transparent with white text and 1px border. Add hover effects (-translate-y-[1px]).",
+    "inputs": "Shadcn default dark mode inputs. bg-transparent, border-white/10, focus:border-white/20, ring-offset-0, focus:ring-0.",
+    "cards": "Avoid heavily rounded corners. Max rounded-xl. Use border-white/10.",
+    "tabs": "Shadcn tabs, custom h-auto.",
+    "icons": "lucide-react (stroke-width 1.5 or 2)"
+  },
+  "media": {
+    "logos": [
+      {
+        "url": "https://images.unsplash.com/photo-1706879350832-db2615866e54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxnb29nbGUlMjBsb2dvJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3ODg4ODM5NHww&ixlib=rb-4.1.0&q=85",
+        "category": "auth",
+        "description": "Google logo for 'Continue with Google' button"
+      }
+    ],
+    "hero_and_abstract": [
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/443cd214-2cdd-4145-ad74-31b2a8679fe0/images/2ebe3fc8ce4f38846ba70dfe36de1d6b1759ccf25c0516adcebfb24e3b90a7e0.png",
+        "category": "hero_background",
+        "description": "Abstract dark minimal background for the landing page hero section."
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/443cd214-2cdd-4145-ad74-31b2a8679fe0/images/bde39d640dc766219dc53830d279b8a4f07cfd64e3c1be73acc6e10b46ed4733.png",
+        "category": "feature_showcase",
+        "description": "Abstract representation of application tracking cards floating in dark mode, used in the features section."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly use the dark theme classes explicitly (e.g., bg-zinc-950, text-white).",
+    "Ensure the application tracking board uses horizontal scrolling if there are many columns.",
+    "Apply 'data-testid' attributes to all interactive elements for robust testing.",
+    "Do NOT use placeholder text for logos or images. Use the provided media URLs.",
+    "Implement clear visual hierarchies using text-zinc-400 for secondary text and text-white for primary text.",
+    "Make the logo 'DashCareer' text-based with a bold, tracked-tight font.",
+    "No teal or purple-blue gradients allowed. Stick to monochrome + subtle blue/white accents.",
+    "Configure Tailwind CSS fonts with Outfit for headings and Figtree for body."
+  ]
+}
